@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1 id="title">Sample Title</h1>
+    <p id="description">Thank you for taking the time to complete this survey!</p>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
+    <fieldset>
+       <label id="name-label">Name </label>
+      <label for="name"><input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+       <label id="email-label">Email </label>
+      <label for="email"><input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+       <label id="number-label">Age (optional) </label>
+      <label for="number"><input id="number" name="number" type="number" min="10" max="99" placeholder="Enter your age" required /></label>
+    </fieldset>
+    <fieldset>
+      <label>Sample Dropdown
+      <select id="dropdown" >
+        <option value="">(select one)</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">Other</option>
+      </select>
+      </label>
+    </fieldset>
+    <fieldset>
+        <legend>Sample Radio Buttons</legend>
+        <label for="none"><input id="none" type="radio" name="fucks-given" class="inline" value="1" checked /> Option 1</label>
+        <label for="option-1"><input id="option-1" type="radio" name="fucks-given" class="inline" value="2" /> Option 2</label>
+      </fieldset>
+      <fieldset>
+        <legend>Sample Checkboxes</legend>
+        <label for="sample-text-1">
+        <input id="sample-text-1" type="checkbox" name="gun" class="inline" value="1" /> sample-text
+      </label>
+      <label for="sample-text-2">
+        <input id="sample-text-2" type="checkbox" name="noose" class="inline" value="2" /> sample-text
+      </label>
+      <label for="sample-text-3">
+        <input id="sample-text-3" type="checkbox" name="toaster" class="inline" value="3" /> sample-text
+      </label>
+      <label for="sample-text-4">
+        <input id="sample-text-4" type="checkbox" name="building" class="inline" value="4" /> sample-text
+      </label>
+      </fieldset>
+      <fieldset>
+        <label id="suggestions-text" for="suggestions">Sample text box area:
+          <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Sample placeholder text..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
